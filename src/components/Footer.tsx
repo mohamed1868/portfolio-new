@@ -12,7 +12,7 @@ const Footer = () => {
             { href: "https://github.com/mohamed1868", icon: Github },
             { href: "https://www.linkedin.com/in/mohamed-sayed-b38936338", icon: Linkedin },
             { href: "mailto:mohamedsayed20500@gmail.com", icon: Mail },
-            { href: "tel:+201145694211", icon: Phone },
+            { href: "https://wa.me/201145694211", icon: Phone },
           ].map(({ href, icon: Icon }) => (
             <a
               key={href}
