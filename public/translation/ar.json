@@ -1,0 +1,48 @@
+{
+  "name": "محمد سيد",
+  "role": "مطور واجهات أمامية",
+  "location": "القاهرة، مصر",
+  "heroSubtitle": "بناء واجهات ويب حديثة وقابلة للتطوير باستخدام React و TypeScript",
+  "viewCV": "عرض السيرة الذاتية",
+  "contactMe": "تواصل معي",
+  "experience": "الخبرة",
+  "projects": "المشاريع",
+  "toolkit": "الأدوات",
+  "education": "التعليم",
+  "softSkills": "المهارات الشخصية",
+  "viewCode": "عرض الكود",
+  "launchDemo": "تشغيل العرض",
+  "addProject": "أضف مشاريعك هنا",
+  "darkMode": "داكن",
+  "lightMode": "فاتح",
+  "switchLang": "English",
+  "present": "حتى الآن",
+  "expTitle": "مطور واجهات أمامية",
+  "expCompany": "Dynamic Business Solution",
+  "expDate": "01/2025 – حتى الآن",
+  "expPoints": [
+    "بناء واجهات أنظمة HR و ERP باستخدام React و TypeScript",
+    "تطوير تطبيقات توصيل وصفحات هبوط",
+    "ربط RESTful APIs وإدارة الحالة باستخدام Redux",
+    "العمل مع ERPNext (JS/UI) و Jinja"
+  ],
+  "eduDegree": "بكالوريوس حاسبات وذكاء اصطناعي",
+  "eduUniversity": "جامعة حلوان",
+  "eduGrade": "التقدير: جيد",
+  "projectsNote": "أضف مشاريعك هنا — كل مشروع بلينك للكود ولينك للديمو.",
+  "nav": {
+    "experience": "الخبرة",
+    "projects": "المشاريع",
+    "toolkit": "الأدوات",
+    "contact": "تواصل"
+  },
+  "categories": {
+    "languages": "اللغات",
+    "frameworks": "الأطر والمكتبات",
+    "ui": "مكتبات الواجهة",
+    "tools": "الأدوات والمرافق",
+    "platforms": "المنصات",
+    "cs": "أساسيات علوم الحاسب",
+    "soft": "المهارات الشخصية"
+  }
+}

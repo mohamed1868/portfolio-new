@@ -1,11 +1,11 @@
 import { Github, Linkedin, Mail, Phone, FileText, Code2, Sparkles, ArrowDown, Terminal } from "lucide-react";
-import { useI18n } from "@/hooks/useI18n";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const TYPING_TITLES = ["React Developer", "TypeScript Expert", "Next.js Builder", "UI Engineer"];
 
 const HeroSection = () => {
-  const { t } = useI18n();
+  const { t } = useTranslation();
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -55,11 +55,11 @@ const HeroSection = () => {
           <div>
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm">
               <Sparkles size={14} className="text-accent" />
-              <span className="text-xs font-medium text-muted-foreground">{t.location}</span>
+              <span className="text-xs font-medium text-muted-foreground">{t("location")}</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold mb-4 leading-[1.1]">
-              <span className="gradient-text">{t.name}</span>
+              <span className="gradient-text">{t("name")}</span>
             </h1>
 
             <div className="flex items-center gap-2 mb-4 h-10">
@@ -71,17 +71,17 @@ const HeroSection = () => {
             </div>
 
             <p className="text-base md:text-lg text-muted-foreground max-w-lg mb-8 leading-relaxed">
-              {t.heroSubtitle}
+              {t("heroSubtitle")}
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
               <a href="https://docs.google.com/document/d/1uejhWTYK7S7zvzGSaC8XzyMu421cAUnv/edit" target="_blank" rel="noopener noreferrer" className="btn-primary-gradient inline-flex items-center gap-2">
                 <FileText size={16} />
-                {t.viewCV}
+                {t("viewCV")}
               </a>
               <a href="mailto:mohamedsayed20500@gmail.com" className="btn-outline-glow inline-flex items-center gap-2">
                 <Mail size={16} />
-                {t.contactMe}
+                {t("contactMe")}
               </a>
             </div>
 
@@ -121,11 +121,10 @@ const HeroSection = () => {
                   <code>
                     <span className="text-muted-foreground">{"// "}</span><span style={{ color: "hsl(var(--teal))" }}>Mohamed Sayed</span>{"\n"}
                     <span style={{ color: "hsl(var(--accent))" }}>const</span> <span className="text-foreground">developer</span> = {"{\n"}
-                    {"  "}<span style={{ color: "hsl(var(--primary))" }}>skills</span>: [<span style={{ color: "hsl(var(--teal))" }}>"React"</span>, <span style={{ color: "hsl(var(--teal))" }}>"Next.js"</span>,{"\n"}
-                    {"          "}<span style={{ color: "hsl(var(--teal))" }}>"TypeScript"</span>],{"\n"}
-                    {"  "}<span style={{ color: "hsl(var(--primary))" }}>passion</span>: <span style={{ color: "hsl(var(--teal))" }}>"Building UIs"</span>,{"\n"}
-                    {"  "}<span style={{ color: "hsl(var(--primary))" }}>available</span>: <span style={{ color: "hsl(var(--secondary))" }}>true</span>{"\n"}
-                    {"};"}
+                    <span style={{ color: "hsl(var(--primary))" }}>skills</span>: [<span style={{ color: "hsl(var(--teal))" }}>"React"</span>, <span style={{ color: "hsl(var(--teal))" }}>"Next.js"</span>,{"\n"}
+                    <span style={{ color: "hsl(var(--teal))" }}>"TypeScript"</span>],{"\n"}
+                    <span style={{ color: "hsl(var(--primary))" }}>passion</span>: <span style={{ color: "hsl(var(--teal))" }}>"Building UIs"</span>,{"\n"}
+                    <span style={{ color: "hsl(var(--primary))" }}>available</span>: <span style={{ color: "hsl(var(--secondary))" }}>true</span>{"\n"}
                   </code>
                 </pre>
               </div>

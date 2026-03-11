@@ -1,0 +1,48 @@
+{
+    "name": "Mohamed Sayed",
+    "role": "Frontend Developer",
+    "location": "Cairo, Egypt",
+    "heroSubtitle": "Building modern, scalable web interfaces with React & TypeScript",
+    "viewCV": "View CV",
+    "contactMe": "Contact Me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "toolkit": "Toolkit",
+    "education": "Education",
+    "softSkills": "Soft Skills",
+    "viewCode": "View Code",
+    "launchDemo": "Launch Demo",
+    "addProject": "Add your projects here",
+    "darkMode": "Dark",
+    "lightMode": "Light",
+    "switchLang": "العربية",
+    "present": "Present",
+    "expTitle": "Frontend Developer",
+    "expCompany": "Dynamic Business Solution",
+    "expDate": "01/2025 – Present",
+    "expPoints": [
+      "Built HR and ERP system interfaces using React and TypeScript",
+      "Developed delivery and landing page applications",
+      "Integrated RESTful APIs and managed state with Redux",
+      "Worked with ERPNext (JS/UI) and Jinja templating"
+    ],
+    "eduDegree": "B.Sc. Computer Science & Artificial Intelligence",
+    "eduUniversity": "Helwan University",
+    "eduGrade": "Grade: Good",
+    "projectsNote": "Add your projects below — each with a code link and demo link.",
+    "nav": {
+      "experience": "Experience",
+      "projects": "Projects",
+      "toolkit": "Toolkit",
+      "contact": "Contact"
+    },
+    "categories": {
+      "languages": "Languages",
+      "frameworks": "Frameworks & Libraries",
+      "ui": "UI Libraries",
+      "tools": "Tools & Utilities",
+      "platforms": "Platforms",
+      "cs": "CS Fundamentals",
+      "soft": "Soft Skills"
+    }
+  }

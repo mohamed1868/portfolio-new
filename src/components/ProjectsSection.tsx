@@ -1,6 +1,6 @@
 import { ExternalLink, Code2, Plus, FolderOpen } from "lucide-react";
-import { useI18n } from "@/hooks/useI18n";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useTranslation } from "react-i18next";
 
 interface ProjectData {
   title: string;
@@ -22,14 +22,14 @@ const PROJECTS: ProjectData[] = [
 ];
 
 const ProjectsSection = () => {
-  const { t } = useI18n();
+  const { t } = useTranslation();
   const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
       <div ref={ref} className="container mx-auto px-4">
         <h2 className={`section-heading gradient-text font-heading reveal ${isVisible ? "visible" : ""}`}>
-          {t.projects}
+          {t("projects")}
         </h2>
 
         {PROJECTS.length > 0 ? (
@@ -52,13 +52,13 @@ const ProjectsSection = () => {
                   {project.codeUrl && (
                     <a href={project.codeUrl} target="_blank" rel="noopener noreferrer" className="btn-outline-glow text-xs inline-flex items-center gap-1.5 !px-4 !py-2">
                       <Code2 size={14} />
-                      {t.viewCode}
+                      {t("viewCode")}
                     </a>
                   )}
                   {project.demoUrl && (
                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="btn-primary-gradient text-xs inline-flex items-center gap-1.5 !px-4 !py-2">
                       <ExternalLink size={14} />
-                      {t.launchDemo}
+                      {t("launchDemo")}
                     </a>
                   )}
                 </div>
@@ -70,9 +70,9 @@ const ProjectsSection = () => {
             <div className="mx-auto w-20 h-20 rounded-2xl flex items-center justify-center mb-5" style={{ background: "var(--gradient-primary)", animation: "pulse-glow 3s infinite" }}>
               <Plus size={32} className="text-primary-foreground" />
             </div>
-            <h3 className="font-heading font-bold text-lg mb-2">{t.addProject}</h3>
+            <h3 className="font-heading font-bold text-lg mb-2">{t("addProject")}</h3>
             <p className="text-muted-foreground text-sm max-w-md mx-auto">
-              {t.projectsNote}
+              {t("projectsNote")}
             </p>
           </div>
         )}
