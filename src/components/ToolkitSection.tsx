@@ -40,6 +40,7 @@ const TOOLKIT_DATA: ToolkitGroup[] = [
       "React",
       "Next.js",
       "Redux",
+      "Redux Toolkit",
       "Redux Persist",
       "React Router",
       "React Query",

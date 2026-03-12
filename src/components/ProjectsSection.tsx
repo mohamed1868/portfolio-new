@@ -4,26 +4,26 @@ import { useTranslation } from "react-i18next";
 
 interface ProjectData {
   title: string;
-  description: string;
   tech: string[];
   codeUrl?: string;
   demoUrl?: string;
 }
-
 const PROJECTS: ProjectData[] = [
-  // Add your real projects here:
-  // {
-  //   title: "Project Name",
-  //   description: "What you built and why",
-  //   tech: ["React", "TypeScript", "Tailwind"],
-  //   codeUrl: "https://github.com/mohamed1868/project",
-  //   demoUrl: "https://project-demo.com",
-  // },
+  { title: "Restaurant", tech: ["React", "JavaScript", "Tailwind"], codeUrl: "...", demoUrl: "..." },
+  { title: "Graduation-Project", tech: ["React", "JavaScript", "AntDesign"], codeUrl: "...", demoUrl: "..." },
+  { title: "Memory Game", tech: ["Html", "Css", "JavaScript"], codeUrl: "...", demoUrl: "..." },
+  { title: "ToDo-List", tech: ["Html", "Css", "JavaScript"], codeUrl: "...", demoUrl: "..." },
+  { title: "web-1", tech: ["Html", "Css"], codeUrl: "...", demoUrl: "..." },
+  { title: "web-2", tech: ["Html", "Css"], codeUrl: "...", demoUrl: "..." },
+  { title: "web-3", tech: ["Html", "Css", "BootStrap"], codeUrl: "...", demoUrl: "..." }
 ];
+
 
 const ProjectsSection = () => {
   const { t } = useTranslation();
   const { ref, isVisible } = useScrollReveal();
+
+
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -42,7 +42,9 @@ const ProjectsSection = () => {
                   </div>
                   <h3 className="font-heading font-bold text-lg">{project.title}</h3>
                 </div>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {t(`projectDescriptions.${project.title}`)}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-5">
                   {project.tech.map((t) => (
                     <span key={t} className="badge-skill badge-teal text-xs">{t}</span>
