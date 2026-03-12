@@ -8,16 +8,51 @@ interface ProjectData {
   codeUrl?: string;
   demoUrl?: string;
 }
-const PROJECTS: ProjectData[] = [
-  { title: "Restaurant", tech: ["React", "JavaScript", "Tailwind"], codeUrl: "...", demoUrl: "..." },
-  { title: "Graduation-Project", tech: ["React", "JavaScript", "AntDesign"], codeUrl: "...", demoUrl: "..." },
-  { title: "Memory Game", tech: ["Html", "Css", "JavaScript"], codeUrl: "...", demoUrl: "..." },
-  { title: "ToDo-List", tech: ["Html", "Css", "JavaScript"], codeUrl: "...", demoUrl: "..." },
-  { title: "web-1", tech: ["Html", "Css"], codeUrl: "...", demoUrl: "..." },
-  { title: "web-2", tech: ["Html", "Css"], codeUrl: "...", demoUrl: "..." },
-  { title: "web-3", tech: ["Html", "Css", "BootStrap"], codeUrl: "...", demoUrl: "..." }
-];
 
+const PROJECTS: ProjectData[] = [
+  {
+    title: "Restaurant",
+    tech: ["React", "JavaScript", "Tailwind"],
+    codeUrl: "https://github.com/mohamed1868/Restaurant/",
+    demoUrl: "https://mohamed1868.github.io/Restaurant/",
+  },
+  {
+    title: "Graduation-Project",
+    tech: ["React", "JavaScript", "AntDesign"],
+    codeUrl: "https://github.com/mohamed1868/Graduation-Project",
+    demoUrl: "https://drive.google.com/drive/folders/1dnAoc-t1yQO1m8peSDDjAmJUY-8YKwFJ",
+  },
+  {
+    title: "Memory Game",
+    tech: ["Html", "Css", "JavaScript"],
+    codeUrl: "https://github.com/mohamed1868/memory-game",
+    demoUrl: "https://mohamed1868.github.io/memory-game/",
+  },
+  {
+    title: "ToDo-List",
+    tech: ["Html", "Css", "JavaScript"],
+    codeUrl: "https://github.com/mohamed1868/ToDo-List",
+    demoUrl: "https://mohamed1868.github.io/ToDo-List/",
+  },
+  {
+    title: "web-1",
+    tech: ["Html", "Css"],
+    codeUrl: "https://github.com/mohamed1868/web-1-hosted",
+    demoUrl: "https://mohamed1868.github.io/web-1-hosted/",
+  },
+  {
+    title: "web-2",
+    tech: ["Html", "Css"],
+    codeUrl: "https://github.com/mohamed1868/web-host-2",
+    demoUrl: "https://mohamed1868.github.io/web-host-2/",
+  },
+  {
+    title: "web-3",
+    tech: ["Html", "Css", "BootStrap"],
+    codeUrl: "https://github.com/mohamed1868/wep-Bootstrip-/",
+    demoUrl: "https://mohamed1868.github.io/wep-Bootstrip-//",
+  },
+];
 
 const ProjectsSection = () => {
   const { t } = useTranslation();
