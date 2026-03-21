@@ -1,32 +1,19 @@
-import { Github, Linkedin, Mail, Phone, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const { ref, isVisible } = useScrollReveal();
+  const { ref ,isVisible } = useScrollReveal();
+  const { t } = useTranslation();
 
   return (
-    <footer id="contact" className="py-16 border-t border-border">
-      <div ref={ref} className="container mx-auto px-4 text-center">
-        <div className={`flex justify-center gap-4 mb-8 reveal ${isVisible ? "visible" : ""}`}>
-          {[
-            { href: "https://github.com/mohamed1868", icon: Github },
-            { href: "https://www.linkedin.com/in/mohamed-sayed-b38936338", icon: Linkedin },
-            { href: "mailto:mohamedsayed20500@gmail.com", icon: Mail },
-            { href: "https://wa.me/201145694211", icon: Phone },
-          ].map(({ href, icon: Icon }) => (
-            <a
-              key={href}
-              href={href}
-              target={href.startsWith("http") ? "_blank" : undefined}
-              rel="noopener noreferrer"
-              className="p-4 rounded-2xl card-glass hover:scale-110 transition-all"
-            >
-              <Icon size={20} className="text-muted-foreground" />
-            </a>
-          ))}
-        </div>
-        <p className={`text-sm text-muted-foreground flex items-center justify-center gap-1.5 reveal ${isVisible ? "visible stagger-1" : ""}`}>
-          Built with <Heart size={14} className="text-accent" /> by Mohamed Sayed © {new Date().getFullYear()}
+    <footer ref={ref} className=" mx-auto px-4 relative z-10">
+      <div className="border-t border-border pt-8">
+        <p
+          className={`mb-5 text-sm text-muted-foreground flex items-center justify-center gap-1.5 reveal ${isVisible ? "visible stagger-4" : ""}`}
+        >
+          Built with <Heart size={14} className="text-accent" /> by {t("name")}
+          ©{new Date().getFullYear()}
         </p>
       </div>
     </footer>

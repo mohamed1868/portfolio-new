@@ -53,5 +53,19 @@
     "web-1": "UI showcase only",
     "web-2": "UI showcase only",
     "web-3": "UI showcase only"
-  }
+  },
+  "contact_me": "Contact Me",
+  "contact_subtitle": "Feel free to reach out — I'd love to hear from you!",
+  "form_name": "Your Name",
+  "form_email": "Your Email",
+  "form_phone": "Phone Number",
+  "form_company": "Company Name",
+  "form_details": "Project Details",
+  "form_send": "Send Message",
+  "form_success": "Message sent successfully!",
+  "send_email": "Send Email",
+  "copied": "Copied!",
+  "copy_email": "Copy",
+  "network_error":"❌ Network Error",
+  "check_your_connection":"Check your connection."
 }
